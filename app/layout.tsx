@@ -36,10 +36,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-    <meta name="google-adsense-account" content="ca-pub-6362562001289172"></meta>
-    <head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6362562001289172"
-     crossOrigin="anonymous"></script>
+      <head>
+        <meta name="google-adsense-account" content="ca-pub-6362562001289172" />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6362562001289172"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body className={`${inter.variable} font-sans antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <div className="flex min-h-screen flex-col bg-background text-foreground">
@@ -50,7 +54,6 @@ export default function RootLayout({
         </ThemeProvider>
         <Analytics />
       </body>
-    </head>
     </html>
   )
 }
