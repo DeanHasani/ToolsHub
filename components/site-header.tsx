@@ -18,23 +18,23 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-card/95 backdrop-blur-sm">
-      <div className="mx-auto flex max-w-3xl items-center justify-between px-4 py-3">
+      <div className="mx-auto flex max-w-4xl items-center justify-between px-4 py-4">
         {/* Mobile toggle */}
         <button
-          className="flex h-9 w-9 items-center justify-center rounded-md text-foreground transition-colors hover:bg-secondary md:hidden"
+          className="flex h-10 w-10 items-center justify-center rounded-md text-foreground transition-colors hover:bg-secondary md:hidden"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label={mobileOpen ? "Close menu" : "Open menu"}
         >
-          {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
 
         {/* Desktop nav - centered */}
-        <nav className="hidden flex-1 items-center justify-center gap-6 md:flex" aria-label="Main navigation">
+        <nav className="hidden flex-1 items-center justify-center gap-8 md:flex" aria-label="Main navigation">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+              className="text-base font-medium text-muted-foreground transition-colors hover:text-foreground"
             >
               {link.name}
             </Link>
@@ -50,7 +50,7 @@ export function SiteHeader() {
       {/* Mobile nav */}
       {mobileOpen && (
         <nav
-          className="border-t border-border bg-card px-4 pb-4 pt-2 md:hidden"
+          className="border-t border-border bg-card px-4 pb-4 pt-3 md:hidden"
           aria-label="Mobile navigation"
         >
           <div className="flex flex-col gap-1">
@@ -59,7 +59,7 @@ export function SiteHeader() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className="rounded-md px-3 py-2.5 text-sm font-medium text-foreground transition-colors hover:bg-secondary"
+                className="rounded-md px-3 py-3 text-base font-medium text-foreground transition-colors hover:bg-secondary"
               >
                 {link.name}
               </Link>

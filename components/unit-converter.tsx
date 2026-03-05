@@ -77,7 +77,7 @@ export function UnitConverter({ units, convert, defaultUnit }: UnitConverterProp
             className="flex items-center justify-between rounded-lg bg-secondary/50 px-4 py-3"
           >
             <span className="text-sm text-muted-foreground">{result.label}</span>
-            <span className="font-mono text-sm font-semibold text-foreground">
+            <span className="text-sm font-semibold text-foreground tabular-nums">
               {result.value % 1 === 0 ? result.value.toLocaleString() : result.value.toLocaleString(undefined, { maximumFractionDigits: 6 })}
             </span>
           </div>

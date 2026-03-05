@@ -11,8 +11,11 @@ const units = [
   { label: "Ounces (oz)", value: "oz" },
   { label: "Stone (st)", value: "st" },
   { label: "Metric Tons (t)", value: "t" },
+  { label: "Liters (L)", value: "L" },
+  { label: "Milliliters (mL)", value: "mL" },
 ]
 
+// Note: Liters/mL assume water density (1g = 1mL)
 const toGrams: Record<string, number> = {
   kg: 1000,
   g: 1,
@@ -21,6 +24,8 @@ const toGrams: Record<string, number> = {
   oz: 28.3495231,
   st: 6350.29318,
   t: 1_000_000,
+  L: 1000,
+  mL: 1,
 }
 
 export function MassConverterClient() {

@@ -40,22 +40,22 @@ export default function TemperatureConverterPage() {
               <tr className="border-b border-border">
                 <td className="py-2 pr-4">{'\u00B0C'} 0</td>
                 <td className="py-2 pr-4">Fahrenheit</td>
-                <td className="py-2 font-mono">32{'\u00B0F'}</td>
+                <td className="py-2 tabular-nums">32{'\u00B0F'}</td>
               </tr>
               <tr className="border-b border-border">
                 <td className="py-2 pr-4">{'\u00B0C'} 100</td>
                 <td className="py-2 pr-4">Fahrenheit</td>
-                <td className="py-2 font-mono">212{'\u00B0F'}</td>
+                <td className="py-2 tabular-nums">212{'\u00B0F'}</td>
               </tr>
               <tr className="border-b border-border">
                 <td className="py-2 pr-4">{'\u00B0F'} 72</td>
                 <td className="py-2 pr-4">Celsius</td>
-                <td className="py-2 font-mono">22.22{'\u00B0C'}</td>
+                <td className="py-2 tabular-nums">22.22{'\u00B0C'}</td>
               </tr>
               <tr>
                 <td className="py-2 pr-4">{'\u00B0C'} 37</td>
                 <td className="py-2 pr-4">Fahrenheit</td>
-                <td className="py-2 font-mono">98.6{'\u00B0F'}</td>
+                <td className="py-2 tabular-nums">98.6{'\u00B0F'}</td>
               </tr>
             </tbody>
           </table>

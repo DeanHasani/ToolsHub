@@ -40,22 +40,22 @@ export default function LengthConverterPage() {
               <tr className="border-b border-border">
                 <td className="py-2 pr-4">1 m</td>
                 <td className="py-2 pr-4">Feet</td>
-                <td className="py-2 font-mono">3.2808 ft</td>
+                <td className="py-2 tabular-nums">3.2808 ft</td>
               </tr>
               <tr className="border-b border-border">
                 <td className="py-2 pr-4">1 km</td>
                 <td className="py-2 pr-4">Miles</td>
-                <td className="py-2 font-mono">0.6214 mi</td>
+                <td className="py-2 tabular-nums">0.6214 mi</td>
               </tr>
               <tr className="border-b border-border">
                 <td className="py-2 pr-4">1 in</td>
                 <td className="py-2 pr-4">Centimeters</td>
-                <td className="py-2 font-mono">2.54 cm</td>
+                <td className="py-2 tabular-nums">2.54 cm</td>
               </tr>
               <tr>
                 <td className="py-2 pr-4">1 mile</td>
                 <td className="py-2 pr-4">Kilometers</td>
-                <td className="py-2 font-mono">1.6093 km</td>
+                <td className="py-2 tabular-nums">1.6093 km</td>
               </tr>
             </tbody>
           </table>

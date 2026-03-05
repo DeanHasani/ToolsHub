@@ -4,19 +4,19 @@ import { AdPlaceholder } from "@/components/ad-placeholder"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Mass Converter - Convert kg, g, lbs, oz, stone, mg",
-  description: "Free online mass converter. Easily convert between kilograms, grams, pounds, ounces, stone, milligrams, and metric tons.",
-  keywords: ["mass converter", "weight converter", "kg to lbs", "grams to ounces", "pounds to kilograms"],
+  title: "Mass & Volume Converter - kg, g, lbs, oz, liters, mL",
+  description: "Free online mass and volume converter. Convert between kilograms, grams, pounds, ounces, liters, milliliters, and more.",
+  keywords: ["mass converter", "weight converter", "kg to lbs", "grams to ounces", "liters to ml", "volume converter"],
 }
 
 export default function MassConverterPage() {
   return (
     <div className="mx-auto max-w-3xl px-4 py-10 lg:py-14">
       <h1 className="text-2xl font-bold text-foreground sm:text-3xl">
-        Mass Converter
+        Mass & Volume Converter
       </h1>
       <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-        Convert between kilograms, grams, pounds, ounces, and more. Enter a value and see all results instantly.
+        Convert between kilograms, grams, pounds, ounces, liters, milliliters, and more. Enter a value and see all results instantly.
       </p>
 
       <div className="mt-6">
@@ -47,22 +47,22 @@ export default function MassConverterPage() {
               <tr className="border-b border-border">
                 <td className="py-2 pr-4">1 kg</td>
                 <td className="py-2 pr-4">Pounds</td>
-                <td className="py-2 font-mono">2.2046 lbs</td>
+                <td className="py-2 tabular-nums">2.2046 lbs</td>
               </tr>
               <tr className="border-b border-border">
                 <td className="py-2 pr-4">1 lb</td>
                 <td className="py-2 pr-4">Kilograms</td>
-                <td className="py-2 font-mono">0.4536 kg</td>
+                <td className="py-2 tabular-nums">0.4536 kg</td>
               </tr>
               <tr className="border-b border-border">
                 <td className="py-2 pr-4">16 oz</td>
                 <td className="py-2 pr-4">Pounds</td>
-                <td className="py-2 font-mono">1 lb</td>
+                <td className="py-2 tabular-nums">1 lb</td>
               </tr>
               <tr>
                 <td className="py-2 pr-4">1 stone</td>
                 <td className="py-2 pr-4">Kilograms</td>
-                <td className="py-2 font-mono">6.3503 kg</td>
+                <td className="py-2 tabular-nums">6.3503 kg</td>
               </tr>
             </tbody>
           </table>
