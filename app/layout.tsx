@@ -10,16 +10,16 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export const metadata: Metadata = {
   title: {
-    default: 'ToolHub - Free Online Calculators & Converters',
-    template: '%s | ToolHub',
+    default: 'ToolsHub - Free Online Calculators & Converters',
+    template: '%s | ToolsHub',
   },
   description: 'Free online percentage calculator, unit converters, and calorie estimator. Fast, simple tools -- no sign-up required.',
   keywords: ['percentage calculator', 'unit converter', 'mass converter', 'calorie estimator', 'length converter', 'temperature converter'],
-  authors: [{ name: 'ToolHub' }],
+  authors: [{ name: 'ToolsHub' }],
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    siteName: 'ToolHub',
+    siteName: 'ToolsHub',
   },
 }
 
